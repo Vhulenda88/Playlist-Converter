@@ -1,0 +1,7 @@
+{
+  "name": "Playlist-Converter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
