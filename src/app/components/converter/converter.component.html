@@ -1,0 +1,42 @@
+<h3 class="flexbox">Converted {{convertedTo}} playlist:</h3>
+<div class="flexbox">
+    <table >
+      <thead>
+        <tr>
+          <th>Song</th>
+          <th>Artist</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="!playlist">
+          <td>
+            No playlist
+          </td>
+          <td>blue</td>
+          <td><button class="button alert round" type="button" >
+            <span aria-hidden="true"><i class="fi-trash"></i></span>
+            Remove song
+          </button></td>
+        </tr>
+        <tr  *ngFor="let song of playlist!.songList">
+          <td>{{song.songName}}</td>
+          <td>{{song.artistName}}</td>
+          <td>
+            <button class="button alert round" type="button" (click)="removeSong(song)">
+              <span aria-hidden="true"><i class="fi-trash"></i></span>
+              Remove song
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+</div>
+<div class="flexbox">
+  <button class="button hollow warning" id="convert" [routerLink]="['/home']">Convert another playlist</button>
+</div>
+
+
+
+
