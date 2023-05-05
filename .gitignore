@@ -40,3 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+src/api/src/main/java/com/playlistconverter/PlaylistConverter/spotify/model/constants/AuthRequests.java
+src/api/src/main/java/com/playlistconverter/PlaylistConverter/youtube/model/contants/AuthRequests.java
+src/api/src/main/java/com/playlistconverter/PlaylistConverter/youtube/service/client_secret.json
+src/api/src/main/resources/client_secret.json
